@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <form method="POST" action="http://localhost:8081/test">
+    <label>Email:</label>
+    <input type="text" name="changed">
+    <label>Password:</label>
+    <input type="password" name="password">
+    <input type="hidden" name="secret_info" value="secret_value">
+    <input type="submit" name="login" value="Log In!">
+    <input type="submit" name="login" value="Log In! a" formaction="http://localhost:8081/aaa">
+    <input type="submit" name="login" value="Log In! b" formaction="http://localhost:8081/bbb">
+    <input type="submit" name="login" value="Log In! GET" formaction="http://localhost:8081/bbb" formmethod="GET">
+  </form>
+  </form>
+</body>
+</html>
